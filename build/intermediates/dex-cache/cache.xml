@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_4603c3db8b3a06a2f56c55f2390172fe559cc6aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_3a473fd75ed7ed657ef59cfed3f2f363f849ef88.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_5a5650d133c566697770f52ddc1fd7a6972a75e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_2f427dc6b36fd6e019d9865f49f0fc9afe461b14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_0ea7386634367c7036cb0660d512cc8f46f37708.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_dd6b2fa323ddf5eb57d6c8106e6d745c1e3c2d37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_76f8150034003f5cca7dd41e6357b7788494a39f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_b5109fbe58c327bf20feee3b9760cae7eb03cdd3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_8f77f5875df4f60ddde4c92a3475488ac30f325d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_b007b65c10931f033f11e7f0c3a10098b2669ddc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_55ad9d29917cdb4be0df9053d08c3f51dfac66f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_81ceb73dcb8fb5e4eb339174630d6509c8e8d85a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_052e1b32e25386b0ec844b2619c3f78b0e477b87.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_64b510b829654dd3be0a8144da7e8ed443330a16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_31cb3ce8b857d600768731e314373f38707768b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="dcb23bcb123dcdc527b7b27858ac89d2dda7c8f3">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_9e89f36ad7faca3a0862d1e723773bca1bedbdc6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4ce3dea4d4824e091d337bda1a71b7003e807dfb">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\instant-run_152ae4e422665002c221ff3fc0a48074598f8599.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_e0d3d90aabd997f1967c53cb0f49c260fb4a22ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_cbf9e280265071e725b8bfd2c7cf173b732bae24.jar" />
+    </item>
+
+</items>
