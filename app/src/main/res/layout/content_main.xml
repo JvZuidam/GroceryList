@@ -12,7 +12,8 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.jimva.grocery.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:background="@drawable/yellownotepad" android:tileMode="repeat">
+    android:background="@drawable/yellownotepad"
+    android:tileMode="repeat">
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,4 +32,18 @@
         android:id="@+id/Btn"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/input_plus_white"
+        android:id="@+id/BtnActAddItem"
+        app:backgroundTint="@android:color/holo_green_light"
+        app:elevation="4dp"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

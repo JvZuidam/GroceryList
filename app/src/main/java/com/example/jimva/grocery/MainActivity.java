@@ -1,5 +1,6 @@
 package com.example.jimva.grocery;
 
+import android.content.Intent;
 import android.net.wifi.p2p.WifiP2pManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -26,26 +27,13 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
+        FloatingActionButton next = (FloatingActionButton) findViewById(R.id.BtnActAddItem);
+        next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent myIntent = new Intent(view.getContext(), AddArticleActivity.class);
+                startActivityForResult(myIntent, 0);
             }
-        });
-        final TextView Txt = (TextView) findViewById(R.id.TxtVw);
-        Button Btn = (Button) findViewById(R.id.Btn);
-        Btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(Txt.getText().toString() == "testing") {
-                    Txt.setText("Hello World!");
-                }
-                else {
-                    Txt.setText("testing");
-                }
-            }
+
         });
     }
 
