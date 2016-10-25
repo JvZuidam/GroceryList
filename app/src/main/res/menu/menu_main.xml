@@ -3,8 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.jimva.grocery.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/nieuw_recept"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="Nieuw recept"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/nieuw_artikel"
+        android:title="Nieuw artikel"/>
 </menu>

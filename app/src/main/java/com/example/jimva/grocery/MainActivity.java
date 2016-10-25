@@ -15,11 +15,10 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-import static com.example.jimva.grocery.R.id.Btn;
-
 public class MainActivity extends AppCompatActivity {
 // private TextView Txt;
     //
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,14 +26,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton next = (FloatingActionButton) findViewById(R.id.BtnActAddItem);
-        next.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), AddArticleActivity.class);
-                startActivityForResult(myIntent, 0);
-            }
-
-        });
     }
 
     @Override
@@ -54,6 +45,15 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+
+        switch(item.getItemId()) {
+            case R.id.nieuw_artikel:
+                Intent intent = new Intent(this, AddArticleActivity.class);
+                this.startActivity(intent);
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
         }
 
         return super.onOptionsItemSelected(item);
