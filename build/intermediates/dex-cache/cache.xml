@@ -3,21 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_4603c3db8b3a06a2f56c55f2390172fe559cc6aa.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
         <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_3a473fd75ed7ed657ef59cfed3f2f363f849ef88.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_4603c3db8b3a06a2f56c55f2390172fe559cc6aa.jar" />
     </item>
     <item
         is-multidex="false"
@@ -142,7 +142,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="9e2cc33b3e7c0e0fc71de0db95f466983e96698e">
+        sha1="bd8b55298f095c05d877053470c6260f1c604fe1">
         <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_9e89f36ad7faca3a0862d1e723773bca1bedbdc6.jar" />
     </item>
     <item
@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="f7573d2a13bfff694cd39bce5aaeffe4477bed44">
+        sha1="c02bcfea015a5e835dc89864a044a261d40d54c2">
         <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\instant-run_152ae4e422665002c221ff3fc0a48074598f8599.jar" />
     </item>
     <item

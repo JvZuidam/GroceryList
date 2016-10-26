@@ -9,6 +9,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/AmountVw"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_alignParentBottom="true"/>
     <TextView
         android:text="TextView"
@@ -16,6 +19,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/NameVw"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/AmountVw"
+        android:textSize="20dp"
         android:layout_marginLeft="100dp"/>
 </RelativeLayout>
