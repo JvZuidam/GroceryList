@@ -13,12 +13,27 @@
             android:label="Boodschappenlijst"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="AddArticleActivity"></activity>
+
+        <activity android:name="AddArticleActivity"
+            android:label="Boodschappenlijst">
+        </activity>
+
+        <activity android:name=".AddRecipeActivity"
+            android:label="Boodschappenlijst">
+        </activity>
+
+        <activity android:name=".NewArticleActivity"
+            android:label="Boodschappenlijst">
+        </activity>
+
+        <activity android:name=".NewRecipeActivity"
+            android:label="Boodschappenlijst">
+        </activity>
     </application>
 
 </manifest>
