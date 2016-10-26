@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:baselineAligned="false"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/yellownotepad"
+    android:tileMode="repeat">
 
-    <RelativeLayout
-        android:background="@drawable/yellownotepad"
-        android:tileMode="repeat"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Add an article to the grocery list"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/Scroller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </LinearLayout>
 
-        <include layout="@layout/button_bar"/>
-    </RelativeLayout>
-</LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/button_bar"/>
+
+</RelativeLayout>
 
