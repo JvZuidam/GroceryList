@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:background="@drawable/item_background">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NameVw1"
+        android:textSize="20dp"
+        android:layout_marginLeft="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/AmountVw"
+        android:layout_toEndOf="@+id/AmountVw"
+        android:layout_marginStart="48dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AmountVw"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/FltActBtn"
+        android:layout_toEndOf="@+id/FltActBtn" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_add"
+        app:elevation="0dp"
+        app:fabSize="mini"
+        android:id="@+id/FltActBtn"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+</RelativeLayout>

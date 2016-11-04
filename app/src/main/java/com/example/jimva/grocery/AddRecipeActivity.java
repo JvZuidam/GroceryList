@@ -1,11 +1,20 @@
 package com.example.jimva.grocery;
 
-        import android.content.Intent;
-        import android.os.Bundle;
-        import android.support.design.widget.FloatingActionButton;
-        import android.support.v7.app.AppCompatActivity;
-        import android.view.View;
-        import android.widget.LinearLayout;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by jimva on 10/24/2016.
@@ -17,18 +26,42 @@ public class AddRecipeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_recipe);
 
-        FloatingActionButton next = (FloatingActionButton) findViewById(R.id.BtnActAddItem);
-        next.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), NewRecipeActivity.class);
-                startActivityForResult(myIntent, 0);
-            }
+        FloatingActionButton showDialog = (FloatingActionButton) findViewById(R.id.showdialog);
 
+
+        showDialog.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                View view = (LayoutInflater.from(AddRecipeActivity.this)).inflate(R.layout.user_input, null);
+
+                AlertDialog.Builder alertBuilder = new AlertDialog.Builder(AddRecipeActivity.this);
+                alertBuilder.setView(view);
+                final EditText userInput = (EditText) view.findViewById(R.id.userinput);
+
+                alertBuilder.setCancelable(true)
+                        .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                if (userInput.getText().toString().trim().length() > 0) {
+                                    LinearLayout Layout = (LinearLayout) findViewById(R.id.Scroller);
+                                    RecipeView newView = new RecipeView(AddRecipeActivity.this, userInput.getText().toString());
+                                    Layout.addView(newView);
+                                }
+                                else {
+                                    Context context = getApplicationContext();
+                                    CharSequence text = "Het veld mag niet leeg zijn!";
+                                    int duration = Toast.LENGTH_SHORT;
+
+                                    Toast toast = Toast.makeText(context, text, duration);
+                                    toast.show();
+                                }
+                            }
+                        });
+                Dialog dialog = alertBuilder.create();
+                dialog.show();
+            }
         });
-        LinearLayout Layout = (LinearLayout) findViewById(R.id.Scroller);
-        for (int i = 1; i<20; i++) {
-            RecipeView newView = new RecipeView(this, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum");
-            Layout.addView(newView);
-        }
     }
 }

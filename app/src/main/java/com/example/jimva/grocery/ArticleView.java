@@ -11,17 +11,21 @@ import android.widget.TextView;
 
 public class ArticleView extends RelativeLayout {
 
+    private String Amount;
     private String Name;
 
-    public ArticleView(Context context, String name) {
+    public ArticleView(Context context, String amount, String name) {
         super(context);
+        Amount = amount;
         Name = name;
         init(context);
     }
 
     private void init(Context context){
         inflate(context, R.layout.article_layout, this);
-        TextView Txt2 = (TextView) findViewById(R.id.NameVw);
+        TextView Txt1 = (TextView) findViewById(R.id.AmountVw);
+        TextView Txt2 = (TextView) findViewById(R.id.NameVw1);
+        Txt1.setText(Amount);
         Txt2.setText(Name);
     }
 }
