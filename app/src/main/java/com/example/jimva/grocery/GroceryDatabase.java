@@ -5,7 +5,6 @@ package com.example.jimva.grocery;
  */
 
 
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class GroceryDatabase  {
@@ -19,7 +18,13 @@ public class GroceryDatabase  {
 
     public void DbHandler() {
         mydatabase.execSQL("CREATE TABLE IF NOT EXISTS GroceryList(RecId INTEGER, ProId INTEGER, Amount VARCHAR);");
-        mydatabase.execSQL("INSERT INTO GroceryList VALUES(1,1,'500');");
+        mydatabase.execSQL("CREATE TABLE IF NOT EXISTS Recipes(RecId INTEGER, Name VARCHAR);");
+        mydatabase.execSQL("CREATE TABLE IF NOT EXISTS Products(ProId INTEGER, Name VARCHAR, Amount VARCHAR);");
+        mydatabase.execSQL("CREATE TABLE IF NOT EXISTS RecProList(RecId INTEGER, ProId INTEGER, Amount VARCHAR);");
+    }
+}
+
+        /*mydatabase.execSQL("INSERT INTO GroceryList VALUES(1,1,'500');");
         Cursor resultSet = mydatabase.rawQuery("Select * from GroceryList",null);
         resultSet.moveToFirst();
         int RecId = resultSet.getInt(0);
@@ -27,7 +32,4 @@ public class GroceryDatabase  {
         String Amount = resultSet.getString(2);
         System.out.println(RecId);
         System.out.println(ProId);
-        System.out.println(Amount);
-    }
-}
-
+        System.out.println(Amount); */
