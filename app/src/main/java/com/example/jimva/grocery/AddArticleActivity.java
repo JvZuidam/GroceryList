@@ -1,5 +1,6 @@
 package com.example.jimva.grocery;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -10,15 +11,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.SpinnerAdapter;
 
 /**
  * Created by jimva on 10/24/2016.
  */
 
 public class AddArticleActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,18 +31,21 @@ public class AddArticleActivity extends AppCompatActivity {
 
         FloatingActionButton showDialog = (FloatingActionButton) findViewById(R.id.showdialog);
 
-
-
         showDialog.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
+
                 View view = (LayoutInflater.from(AddArticleActivity.this)).inflate(R.layout.user_input_article, null);
 
                 AlertDialog.Builder alertBuilder = new AlertDialog.Builder(AddArticleActivity.this);
                 alertBuilder.setView(view);
                 final EditText userinputname = (EditText) view.findViewById(R.id.UserInputName);
                 final EditText userinputamount = (EditText) view.findViewById(R.id.UserInputAmount);
+                final Spinner spinner = (Spinner) view.findViewById(R.id.input_spinner);
+                ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(AddArticleActivity.this, R.array.planets_array, android.R.layout.simple_spinner_item);
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spinner.setAdapter(adapter);
 
                 alertBuilder.setCancelable(true)
                         .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
@@ -46,8 +54,14 @@ public class AddArticleActivity extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 if (userinputname.getText().toString().trim().length() > 0) {
                                     LinearLayout Layout = (LinearLayout) findViewById(R.id.Scroller);
-                                    ArticleView newView = new ArticleView(AddArticleActivity.this, userinputamount.getText().toString(), userinputname.getText().toString());
-                                    Layout.addView(newView);
+                                    String spintext = spinner.getSelectedItem().toString();
+                                    if (spinner.getSelectedItemPosition() == 4 && userinputamount.getText().toString().trim().length() > 1) {
+                                        spintext += "s";
+
+                                    }
+                                        ArticleView newView = new ArticleView(AddArticleActivity.this, userinputamount.getText().toString() + " " + spintext, userinputname.getText().toString());
+                                        Layout.addView(newView);
+
                                 }
                                 else {
                                     Context context = getApplicationContext();

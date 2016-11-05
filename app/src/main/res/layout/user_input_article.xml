@@ -13,14 +13,20 @@
         android:maxLength="20"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="Naam"
-        android:text="" />
+        android:hint="Naam"/>
     <EditText
         android:id="@+id/UserInputAmount"
         android:inputType="number"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="Hoeveelheid"
-        android:text="" />
+        android:hint="Hoeveelheid"/>
+
+    <Spinner
+        android:id="@+id/input_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/UserInputAmount"
+        android:layout_toRightOf="@id/UserInputAmount"
+        android:drawSelectorOnTop="true"/>
 
 </LinearLayout>

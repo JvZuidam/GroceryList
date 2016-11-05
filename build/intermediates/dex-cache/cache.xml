@@ -3,21 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_4603c3db8b3a06a2f56c55f2390172fe559cc6aa.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
         <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_3a473fd75ed7ed657ef59cfed3f2f363f849ef88.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_4603c3db8b3a06a2f56c55f2390172fe559cc6aa.jar" />
     </item>
     <item
         is-multidex="false"
@@ -129,15 +129,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="945e33335c605ad8e32fb33ce857c981d6c6b48c">
-        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_9e89f36ad7faca3a0862d1e723773bca1bedbdc6.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -147,11 +138,20 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="93b629757bfeeafcaf8880298078a38be19683c0">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_9e89f36ad7faca3a0862d1e723773bca1bedbdc6.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="40efabd29f2a6918c49b34c7a0846a7f87e932c0">
+        sha1="f80ac8e50ca17a7a376c4919f1e5ed38a3055bb4">
         <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\instant-run_152ae4e422665002c221ff3fc0a48074598f8599.jar" />
     </item>
     <item

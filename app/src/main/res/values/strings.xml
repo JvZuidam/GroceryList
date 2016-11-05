@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Grocery</string>
     <string name="action_settings">Settings</string>
+        <string-array name="planets_array">
+            <item>Kilo</item>
+            <item>Gram</item>
+            <item>Liter</item>
+            <item>Milliliter</item>
+            <item>Stuk</item>
+        </string-array>
 </resources>
