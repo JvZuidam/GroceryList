@@ -55,7 +55,8 @@ public class AddArticleActivity extends AppCompatActivity {
                                 if (userinputname.getText().toString().trim().length() > 0) {
                                     LinearLayout Layout = (LinearLayout) findViewById(R.id.Scroller);
                                     String spintext = spinner.getSelectedItem().toString();
-                                    if (spinner.getSelectedItemPosition() == 4 && userinputamount.getText().toString().trim().length() > 1) {
+                                    int value = Integer.parseInt( userinputamount.getText().toString() );
+                                    if (spinner.getSelectedItemPosition() == 4 && value > 1) {
                                         spintext += "s";
 
                                     }
