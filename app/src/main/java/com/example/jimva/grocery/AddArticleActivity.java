@@ -1,6 +1,5 @@
 package com.example.jimva.grocery;
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -16,7 +15,6 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
-import android.widget.SpinnerAdapter;
 
 /**
  * Created by jimva on 10/24/2016.
@@ -52,24 +50,28 @@ public class AddArticleActivity extends AppCompatActivity {
 
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                if (userinputname.getText().toString().trim().length() > 0) {
+                                if (userinputname.getText().toString().trim().length() > 0 && userinputamount.getText().toString().trim().length() > 0) {
                                     LinearLayout Layout = (LinearLayout) findViewById(R.id.Scroller);
                                     String spintext = spinner.getSelectedItem().toString();
                                     int value = Integer.parseInt( userinputamount.getText().toString() );
-                                    if (spinner.getSelectedItemPosition() == 4 && value > 1) {
+                                    if (spinner.getSelectedItemPosition() == 4 && value > 1 ) {
                                         spintext += "s";
 
+                                        //// TODO: 12/8/2016 add a catch to the multiple of yhe 5th item in the spinner
                                     }
-                                        ArticleView newView = new ArticleView(AddArticleActivity.this, userinputamount.getText().toString() + " " + spintext, userinputname.getText().toString());
-                                        Layout.addView(newView);
+                                    if (spinner.getSelectedItemPosition() == 5 && value > 1) {
+                                        spintext += "ken";
+                                    }
+                                    ArticleView newView = new ArticleView(AddArticleActivity.this, userinputamount.getText().toString() + " " + spintext, userinputname.getText().toString());
+                                    Layout.addView(newView);
 
                                 }
                                 else {
                                     Context context = getApplicationContext();
                                     CharSequence text = "Het veld mag niet leeg zijn!";
                                     int duration = Toast.LENGTH_SHORT;
-
                                     Toast toast = Toast.makeText(context, text, duration);
+
                                     toast.show();
                                 }
                             }
@@ -77,7 +79,6 @@ public class AddArticleActivity extends AppCompatActivity {
                 Dialog dialog = alertBuilder.create();
                 dialog.show();
                 dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
-
             }
         });
     }

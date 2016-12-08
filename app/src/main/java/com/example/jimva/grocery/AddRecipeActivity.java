@@ -10,8 +10,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 /**
@@ -19,12 +22,13 @@ import android.widget.Toast;
  */
 
 public class AddRecipeActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_recipe);
-        FloatingActionButton showDialog = (FloatingActionButton) findViewById(R.id.showdialog);
 
+        FloatingActionButton showDialog = (FloatingActionButton) findViewById(R.id.showdialog);
 
         showDialog.setOnClickListener(new View.OnClickListener() {
 
@@ -35,17 +39,32 @@ public class AddRecipeActivity extends AppCompatActivity {
 
                 AlertDialog.Builder alertBuilder = new AlertDialog.Builder(AddRecipeActivity.this);
                 alertBuilder.setView(view);
+                final EditText userinputnamerec = (EditText) view.findViewById(R.id.UserInputNameRec);
                 final EditText userinputname = (EditText) view.findViewById(R.id.UserInputName);
-               // final EditText userinputamount = (EditText) view.findViewById(R.id.UserInputAmount);
+                final EditText userinputamount = (EditText) view.findViewById(R.id.UserInputAmount);
+                final Spinner spinner = (Spinner) view.findViewById(R.id.input_spinner);
+                ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(AddRecipeActivity.this, R.array.planets_array, android.R.layout.simple_spinner_item);
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spinner.setAdapter(adapter);
 
                 alertBuilder.setCancelable(true)
                         .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
 
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                if (userinputname.getText().toString().trim().length() > 0) {
+                                if (userinputnamerec.getText().toString().trim().length() > 0 && userinputname.getText().toString().trim().length() > 0 && userinputamount.getText().toString().trim().length() > 0) {
                                     LinearLayout Layout = (LinearLayout) findViewById(R.id.Scroller);
-                                    RecipeView newView = new RecipeView(AddRecipeActivity.this, userinputname.getText().toString());
+                                    RelativeLayout RelLayout = (RelativeLayout) findViewById(R.id.RecipeLayout);
+                                    String spintext = spinner.getSelectedItem().toString();
+                                    int value = Integer.parseInt( userinputamount.getText().toString() );
+                                    if (spinner.getSelectedItemPosition() == 4 && value > 1) {
+                                        spintext += "s";
+                                    }
+                                    if (spinner.getSelectedItemPosition() == 5 && value > 1) {
+                                        spintext += "ken";
+                                    }
+                                    RecipeView newView = new RecipeView(AddRecipeActivity.this, userinputnamerec.getText().toString(), userinputamount.getText().toString()  + " " + spintext, userinputname.getText().toString());
+
                                     Layout.addView(newView);
                                 }
                                 else {

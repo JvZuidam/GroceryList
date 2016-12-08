@@ -11,12 +11,15 @@
     <EditText
         android:id="@+id/UserInputName"
         android:maxLength="20"
+        android:inputType="text"
+        android:maxLines="1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="Naam"/>
     <EditText
         android:id="@+id/UserInputAmount"
         android:inputType="number"
+        android:maxLines="1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="Hoeveelheid"/>

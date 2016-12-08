@@ -20,12 +20,12 @@
         </activity>
 
         <activity android:name="AddArticleActivity"
-            android:label="Voeg een artikel toe."
+            android:label="Artikelen"
             android:configChanges="keyboardHidden|orientation">
         </activity>
 
         <activity android:name=".AddRecipeActivity"
-            android:label="Voeg een recept toe."
+            android:label="Recepten"
             android:configChanges="keyboardHidden|orientation">
         </activity>
 

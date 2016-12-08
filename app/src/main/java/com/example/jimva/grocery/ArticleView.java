@@ -1,7 +1,6 @@
 package com.example.jimva.grocery;
 
 import android.content.Context;
-import android.support.design.widget.FloatingActionButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 

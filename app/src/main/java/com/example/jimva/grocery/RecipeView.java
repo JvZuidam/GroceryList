@@ -10,17 +10,26 @@ import android.widget.TextView;
 
 public class RecipeView extends RelativeLayout {
 
-    private String Name;
+    private String RecipeName;
+    private String IngredientAmount;
+    private String IngredientName;
 
-    public RecipeView(Context context, String name) {
+    public RecipeView(Context context, String name, String ingredientamount, String ingredientname) {
         super(context);
-        Name = name;
+        RecipeName = name;
+        IngredientAmount = ingredientamount;
+        IngredientName = ingredientname;
         init(context);
     }
 
     private void init(Context context){
         inflate(context, R.layout.recipe_layout, this);
+        TextView Txt1 = (TextView) findViewById(R.id.RecNameVw);
         TextView Txt2 = (TextView) findViewById(R.id.NameVw);
-        Txt2.setText(Name);
+        TextView Txt3 = (TextView) findViewById(R.id.AmountVw);
+        Txt1.setText(RecipeName);
+        Txt2.setText(IngredientName);
+        Txt3.setText(IngredientAmount);
+
     }
 }

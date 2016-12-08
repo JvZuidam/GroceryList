@@ -7,10 +7,10 @@
     android:background="@drawable/item_background">
 
     <TextView
+        android:id="@+id/AmountVw"
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/AmountVw"
         android:layout_alignParentBottom="true"
         android:textSize="15dp"
         android:layout_marginLeft="65dp"/>

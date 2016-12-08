@@ -21,7 +21,7 @@ public class IngredientView extends RelativeLayout{
     }
 
     private void init(Context context){
-        inflate(context, R.layout.ingredient_layout, this);
+        inflate(context, R.layout.article_ingredient_layout, this);
         TextView Txt1 = (TextView) findViewById(R.id.AmountVw);
         TextView Txt2 = (TextView) findViewById(R.id.NameVw);
         Txt1.setText(Amount);

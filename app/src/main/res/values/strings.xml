@@ -7,5 +7,6 @@
             <item>Liter</item>
             <item>Milliliter</item>
             <item>Stuk</item>
+            <item>Pak</item>
         </string-array>
 </resources>
