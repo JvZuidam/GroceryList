@@ -57,13 +57,13 @@ public class AddArticleActivity extends AppCompatActivity {
                                     if (spinner.getSelectedItemPosition() == 4 && value > 1 ) {
                                         spintext += "s";
 
-                                        //// TODO: 12/8/2016 add a catch to the multiple of yhe 5th item in the spinner
+                                        //// TODO: 12/8/2016 add a catch to the multiple of the 5th item in the spinner
                                     }
                                     if (spinner.getSelectedItemPosition() == 5 && value > 1) {
                                         spintext += "ken";
                                     }
-                                    ArticleView newView = new ArticleView(AddArticleActivity.this, userinputamount.getText().toString() + " " + spintext, userinputname.getText().toString());
-                                    Layout.addView(newView);
+                                    ArticleView NewArticleView = new ArticleView(AddArticleActivity.this, userinputamount.getText().toString() + " " + spintext, userinputname.getText().toString());
+                                    Layout.addView(NewArticleView);
 
                                 }
                                 else {

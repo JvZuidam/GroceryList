@@ -5,10 +5,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
- * Created by jimva on 10/26/2016.
+ * Created by jimva on 12/14/2016.
  */
 
-public class IngredientView extends RelativeLayout{
+public class IngredientView extends RelativeLayout {
 
     private String IngredientAmount;
     private String IngredientName;
@@ -21,9 +21,9 @@ public class IngredientView extends RelativeLayout{
     }
 
     private void init(Context context){
-        inflate(context, R.layout.article_ingredient_layout, this);
-        TextView Txt1 = (TextView) findViewById(R.id.AmountVw);
-        TextView Txt2 = (TextView) findViewById(R.id.NameVw);
+        inflate(context, R.layout.recipe_ingredient_layout, this);
+        TextView Txt1 = (TextView) findViewById(R.id.IngredientAmountVw);
+        TextView Txt2 = (TextView) findViewById(R.id.IngredientNameVw);
         Txt1.setText(IngredientAmount);
         Txt2.setText(IngredientName);
     }

@@ -23,4 +23,6 @@ public class RecipeView extends RelativeLayout {
         TextView Txt1 = (TextView) findViewById(R.id.RecNameVw);
         Txt1.setText(RecipeName);
     }
+
+
 }

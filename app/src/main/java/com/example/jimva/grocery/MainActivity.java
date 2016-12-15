@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         LinearLayout Layout = (LinearLayout) findViewById(R.id.Scroller);
         for (int i = 1; i<20; i++) {
-            IngredientView newview = new IngredientView(this, i + "", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ae");
+            MainView newview = new MainView(this, i + "", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ae");
             Layout.addView(newview);
         }
     }
