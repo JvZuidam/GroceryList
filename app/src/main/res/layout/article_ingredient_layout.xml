@@ -4,21 +4,33 @@
     android:layout_height="50dp"
     android:background="@drawable/item_background">
         <TextView
+            android:id="@+id/AmountVw"
             android:text="TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/AmountVw"
             android:textSize="15dp"
             android:padding="10dp"
             android:layout_marginLeft="10dp"
             android:layout_alignParentBottom="true"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/AmountVw"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/checkBox" />
+
         <TextView
+            android:id="@+id/NameVw"
             android:text="TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/NameVw"
-            android:layout_alignParentBottom="true"
             android:textSize="15dp"
-            android:layout_marginLeft="60dp"/>
+            android:layout_marginLeft="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/AmountVw"
+            android:layout_alignStart="@+id/AmountVw"
+            android:layout_marginStart="48dp" />
 
 </RelativeLayout>

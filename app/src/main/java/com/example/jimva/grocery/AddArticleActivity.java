@@ -16,6 +16,12 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.jimva.grocery.Data.Article;
+import com.orm.SugarContext;
+
+import java.util.Iterator;
+import java.util.List;
+
 /**
  * Created by jimva on 10/24/2016.
  */
@@ -26,6 +32,15 @@ public class AddArticleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_article);
+        LinearLayout Layout = (LinearLayout) findViewById(R.id.Scroller);
+
+        List<Article> result = Article.listAll(Article.class);
+        //henk
+        for (Iterator<Article> i = result.iterator(); i.hasNext(); ){
+            Article a = i.next();
+            ArticleView NewArticleView = new ArticleView(AddArticleActivity.this, a.amount, a.name);
+            Layout.addView(NewArticleView);
+        }
 
         FloatingActionButton showDialog = (FloatingActionButton) findViewById(R.id.showdialog);
 
@@ -62,8 +77,15 @@ public class AddArticleActivity extends AppCompatActivity {
                                     if (spinner.getSelectedItemPosition() == 5 && value > 1) {
                                         spintext += "ken";
                                     }
-                                    ArticleView NewArticleView = new ArticleView(AddArticleActivity.this, userinputamount.getText().toString() + " " + spintext, userinputname.getText().toString());
+                                    String inputamount = userinputamount.getText().toString() + " " + spintext;
+                                    ArticleView NewArticleView = new ArticleView(AddArticleActivity.this, inputamount, userinputname.getText().toString());
                                     Layout.addView(NewArticleView);
+
+                                    Article article = new Article();
+                                    article.name = userinputname.getText().toString();
+                                    article.amount = inputamount;
+                                    SugarContext.init(AddArticleActivity.this);
+                                    article.save();
 
                                 }
                                 else {

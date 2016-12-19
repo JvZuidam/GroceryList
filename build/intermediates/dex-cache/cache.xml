@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="7d08bc3f7e99980c3c410bd52eda1c7ec13d2c8a">
+        sha1="1171035c40855803bba1f79b0ebb1d1fc8d75b39">
         <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_9e89f36ad7faca3a0862d1e723773bca1bedbdc6.jar" />
     </item>
     <item
@@ -135,6 +135,15 @@
         revision="24.0.3"
         sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
         <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_5a5650d133c566697770f52ddc1fd7a6972a75e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\google\guava\guava\18.0\guava-18.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\guava-18.0_23ae9d619c9ad952ac11ce7bff78df802e3e98c2.jar" />
     </item>
     <item
         is-multidex="false"
@@ -268,8 +277,26 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="f58dcb8b9212ead0b188b14455ec4ab55ef55538">
+        sha1="1f3b303b915ac9d50357ede1f23cd0cb1c565e29">
         <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\instant-run_152ae4e422665002c221ff3fc0a48074598f8599.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\google\guava\guava\18.0\guava-18.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\guava-18.0_23ae9d619c9ad952ac11ce7bff78df802e3e98c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.github.satyan\sugar\1.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ac045b53684345f4ec8468477e8fc5034d0d2bfd">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.github.satyan-sugar-1.4_601ce1eafc6de5cf50ebad9c26e3e5e05736c9eb.jar" />
     </item>
     <item
         is-multidex="false"
@@ -288,6 +315,15 @@
         revision="24.0.3"
         sha1="d5c731fc64c03dfe04d51134955b483551c35849">
         <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_cbf9e280265071e725b8bfd2c7cf173b732bae24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\exploded-aar\com.github.satyan\sugar\1.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ac045b53684345f4ec8468477e8fc5034d0d2bfd">
+        <dex dex="C:\Users\jimva\AndroidStudioProjects\Grocery\app\build\intermediates\pre-dexed\debug\com.github.satyan-sugar-1.4_601ce1eafc6de5cf50ebad9c26e3e5e05736c9eb.jar" />
     </item>
     <item
         is-multidex="false"

@@ -11,21 +11,17 @@ import android.widget.LinearLayout;
 
 
 public class MainActivity extends AppCompatActivity {
-    GroceryDatabase Db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        System.out.println("Goodnight World!");
-        Db = new GroceryDatabase(this);
-        Db.DbHandler();
 
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         LinearLayout Layout = (LinearLayout) findViewById(R.id.Scroller);
-        for (int i = 1; i<20; i++) {
-            MainView newview = new MainView(this, i + "", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ae");
+        for (int i = 1; i<2; i++) {
+            MainView newview = new MainView(this, i + "", "Lorem ipsum dolor si");
             Layout.addView(newview);
         }
     }
